@@ -303,45 +303,53 @@ nav ul li a:hover {
 }
 
 /* Footer Section Styles */
+/* Footer Section Styles */
 .footer {
-    background-color: #1e1e1e; /* Dark background for the footer */
-    color: #ffffff; /* White text for contrast */
-    padding: 30px 50px;
-    text-align: center;
-}
-
-.footer-container {
-    max-width: 1200px;
+    background-color: #222; /* Dark background */
+    color: #eee; /* Light text */
+    padding: 40px 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 80%;
     margin: 0 auto;
+  }
+  
+  .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.footer-links a {
-    color: #ffffff; /* White color for links */
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-links ul, 
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    color: #eee;
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-.footer-links a:hover {
-    color: #ff9800; /* Highlight color on hover */
-}
-
-.footer-social a {
-    color: #ffffff; /* White color for social icons */
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Optional: Social icons (if using Font Awesome) */
+  .footer-social a i {
     font-size: 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-.footer-social a:hover {
-    color: #ff9800; /* Highlight color on hover */
-}
+    margin-right: 10px;
+  }
