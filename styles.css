@@ -1,0 +1,347 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for the theme */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1e1e1e; /* Darker background for the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* White color for the logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text for links */
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Highlight color for hover effect */
+}
+
+.cta-book {
+    padding: 10px 20px;
+    background-color: #ff9800; /* Bright color for the CTA button */
+    color: #1e1e1e; /* Dark text for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta-book:hover {
+    background-color: #e68900; /* Darker shade for hover effect */
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: url('https://source.unsplash.com/1600x900/?travel') no-repeat center center/cover; /* Background image */
+    position: relative;
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-explore {
+    padding: 10px 20px;
+    background-color: #ff9800; /* Bright color for the CTA button */
+    color: #1e1e1e; /* Dark text for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta-explore:hover {
+    background-color: #e68900; /* Darker shade for hover effect */
+}
+
+/* About Us Section Styles */
+.about {
+    padding: 60px 50px;
+    background-color: #1e1e1e; /* Dark background for the section */
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff9800; /* Highlight color for the heading */
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px auto; /* Center align the paragraph with auto margin */
+    line-height: 1.6;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-images img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for images */
+}
+
+/* Featured Destinations Section Styles */
+.destinations {
+    padding: 60px 50px;
+    background-color: #121212; /* Dark background for the section */
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff9800; /* Highlight color for the heading */
+}
+
+.destination-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.destination-item {
+    background-color: #1e1e1e; /* Dark background for the item */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for items */
+    text-align: left;
+}
+
+.destination-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.destination-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff9800; /* Highlight color for the item title */
+}
+
+.destination-item p {
+    font-size: 16px;
+    color: #dddddd; /* Light grey text for the description */
+}
+
+/* Special Packages Section Styles */
+.packages {
+    padding: 60px 50px;
+    background-color: #1e1e1e; /* Dark background for the section */
+    text-align: center;
+}
+
+.packages h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff9800; /* Highlight color for the heading */
+}
+
+.package-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.package-item {
+    background-color: #121212; /* Darker background for the item */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for items */
+    text-align: left;
+}
+
+.package-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.package-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff9800; /* Highlight color for the item title */
+}
+
+.package-item p {
+    font-size: 16px;
+    color: #dddddd; /* Light grey text for the description */
+}
+
+.package-item .cta {
+    padding: 10px 20px;
+    background-color: #ff9800; /* Bright color for the CTA button */
+    color: #1e1e1e; /* Dark text for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.package-item .cta:hover {
+    background-color: #e68900; /* Darker shade for hover effect */
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 80px 50px;
+    background-color: #1e1e1e; /* Dark background for the section */
+    color: #ffffff; /* White text for contrast */
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #ff9800; /* Bright color for the button */
+    color: #1e1e1e; /* Dark text for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-form button:hover {
+    background-color: #e68900; /* Darker shade for hover effect */
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #1e1e1e; /* Dark background for the footer */
+    color: #ffffff; /* White text for contrast */
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
+
+.footer-social a {
+    color: #ffffff; /* White color for social icons */
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-social a:hover {
+    color: #ff9800; /* Highlight color on hover */
+}
