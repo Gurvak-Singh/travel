@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations - Travel Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="transitions.js"></script>
+    <script defer src="mobile-menu.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">TravelAgency</div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html" class="active">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="overlay"></div>
+
+    <section class="destinations-hero">
+      <div class="destinations-hero-overlay"></div>
+      <img
+        src="images/destinations-hero.jpg"
+        alt="Paradise beach with palm trees"
+        class="destinations-hero-img"
+      />
+      <div class="destinations-hero-content">
+        <h1>Explore Our Destinations</h1>
+        <p>Discover the world's most beautiful locations</p>
+      </div>
+    </section>
+
+    <section class="featured-destinations">
+      <div class="section-inner">
+        <div class="section-title">FEATURED DESTINATIONS</div>
+        <h2>Top Places to Visit This Year</h2>
+        
+        <div class="destinations-grid">
+          <div class="destination-card-large">
+            <div class="destination-img-wrap">
+              <img src="images/dest1.jpg" alt="Maldives beach resort" />
+              <div class="destination-overlay">
+                <div class="destination-details">
+                  <h3>Maldives</h3>
+                  <p>Crystal clear waters and overwater bungalows</p>
+                  <div class="destination-meta">
+                    <span class="destination-price">From $1,200</span>
+                    <span class="destination-duration">7-10 Days</span>
+                  </div>
+                  <a href="#" class="btn-orange">Explore Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="destination-card-large">
+            <div class="destination-img-wrap">
+              <img src="images/dest2.jpg" alt="Santorini white buildings with blue domes" />
+              <div class="destination-overlay">
+                <div class="destination-details">
+                  <h3>Santorini</h3>
+                  <p>Iconic white villages and stunning sunsets</p>
+                  <div class="destination-meta">
+                    <span class="destination-price">From $950</span>
+                    <span class="destination-duration">5-7 Days</span>
+                  </div>
+                  <a href="#" class="btn-orange">Explore Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="destination-card-large">
+            <div class="destination-img-wrap">
+              <img src="images/dest3.jpg" alt="Bali rice terraces and temple" />
+              <div class="destination-overlay">
+                <div class="destination-details">
+                  <h3>Bali</h3>
+                  <p>Tropical paradise with rich culture and beaches</p>
+                  <div class="destination-meta">
+                    <span class="destination-price">From $850</span>
+                    <span class="destination-duration">8-12 Days</span>
+                  </div>
+                  <a href="#" class="btn-orange">Explore Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations-categories">
+      <div class="section-inner">
+        <div class="section-title">TRAVEL CATEGORIES</div>
+        <h2>Find Your Perfect Adventure</h2>
+        
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="category-icon">🏝️</div>
+            <h3>Beach Getaways</h3>
+            <p>Pristine beaches and crystal-clear waters for the ultimate relaxation.</p>
+            <a href="#" class="category-link">View Destinations</a>
+          </div>
+          
+          <div class="category-card">
+            <div class="category-icon">🏔️</div>
+            <h3>Mountain Escapes</h3>
+            <p>Breathtaking mountain views and exciting hiking adventures.</p>
+            <a href="#" class="category-link">View Destinations</a>
+          </div>
+          
+          <div class="category-card">
+            <div class="category-icon">🏙️</div>
+            <h3>City Breaks</h3>
+            <p>Experience vibrant city life, culture, and world-class dining.</p>
+            <a href="#" class="category-link">View Destinations</a>
+          </div>
+          
+          <div class="category-card">
+            <div class="category-icon">🧭</div>
+            <h3>Adventure Tours</h3>
+            <p>Thrilling experiences for the adventurous traveler.</p>
+            <a href="#" class="category-link">View Destinations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations-continents">
+      <div class="section-inner">
+        <div class="section-title">EXPLORE BY CONTINENT</div>
+        <h2>Discover Amazing Places Around the World</h2>
+        
+        <div class="continent-tabs">
+          <button class="continent-tab active" data-continent="europe">Europe</button>
+          <button class="continent-tab" data-continent="asia">Asia</button>
+          <button class="continent-tab" data-continent="africa">Africa</button>
+          <button class="continent-tab" data-continent="americas">Americas</button>
+          <button class="continent-tab" data-continent="oceania">Oceania</button>
+        </div>
+        
+        <div class="continent-content active" id="europe">
+          <div class="continent-grid">
+            <div class="continent-destination">
+              <img src="images/paris.jpg" alt="Eiffel Tower in Paris" />
+              <h3>Paris, France</h3>
+              <p>The city of love and lights</p>
+            </div>
+            <div class="continent-destination">
+              <img src="images/rome.jpg" alt="Colosseum in Rome" />
+              <h3>Rome, Italy</h3>
+              <p>Ancient history and delicious cuisine</p>
+            </div>
+            <div class="continent-destination">
+              <img src="images/santorini.jpg" alt="Santorini sunset" />
+              <h3>Santorini, Greece</h3>
+              <p>Iconic white and blue architecture</p>
+            </div>
+            <div class="continent-destination">
+              <img src="images/barcelona.jpg" alt="Sagrada Familia in Barcelona" />
+              <h3>Barcelona, Spain</h3>
+              <p>Gaudi's architecture and vibrant culture</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Other continent content sections would be hidden by default and shown via JavaScript -->
+      </div>
+    </section>
+
+    <section class="destinations-map">
+      <div class="section-inner">
+        <div class="section-title">INTERACTIVE MAP</div>
+        <h2>Find Your Next Adventure</h2>
+        <p class="map-intro">Explore our destinations around the world. Click on the markers to learn more about each location.</p>
+        
+        <div class="map-container">
+          <!-- This would be replaced with an actual interactive map using Google Maps or similar -->
+          <img src="images/world-map.jpg" alt="World Map with destination markers" class="placeholder-map" />
+          <p class="map-note">Interactive map coming soon. For now, browse our curated collections above.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations-cta">
+      <div class="section-inner">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Our travel experts can help you plan the perfect trip to any of our destinations.</p>
+        <div class="cta-buttons">
+          <a href="index.html#contact" class="btn-orange">Contact Us</a>
+          <a href="index.html#packages" class="btn-outline">View Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>About TravelAgency</h4>
+          <p>
+            We specialize in creating unforgettable travel experiences around the
+            world. Our expert team crafts journeys that combine adventure,
+            culture, and relaxation.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>1234 Travel Lane<br />Adventure City, AC 12345</p>
+          <p>Phone: (123) 456-7890<br />Email: info@travelagency.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+          </div>
+          <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TravelAgency. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

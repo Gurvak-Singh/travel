@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Packages - Travel Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="transitions.js"></script>
+    <script defer src="mobile-menu.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">TravelAgency</div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html" class="active">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <section class="packages-hero">
+      <div class="packages-hero-overlay"></div>
+      <img
+        src="images/packages-hero.jpg"
+        alt="Luxury resort view"
+        class="packages-hero-img"
+      />
+      <div class="packages-hero-content">
+        <h1>Our Tour Packages</h1>
+        <p>Carefully curated travel experiences for every type of adventurer</p>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <div class="section-inner">
+        <div class="filter-container">
+          <div class="filter-group">
+            <label>Destination</label>
+            <select>
+              <option>All Destinations</option>
+              <option>Europe</option>
+              <option>Asia</option>
+              <option>Africa</option>
+              <option>Americas</option>
+              <option>Oceania</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Duration</label>
+            <select>
+              <option>Any Duration</option>
+              <option>1-3 Days</option>
+              <option>4-7 Days</option>
+              <option>8-14 Days</option>
+              <option>15+ Days</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Package Type</label>
+            <select>
+              <option>All Types</option>
+              <option>Luxury</option>
+              <option>Adventure</option>
+              <option>Cultural</option>
+              <option>Family</option>
+              <option>Romantic</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Budget</label>
+            <select>
+              <option>Any Budget</option>
+              <option>Economy</option>
+              <option>Standard</option>
+              <option>Premium</option>
+              <option>Luxury</option>
+            </select>
+          </div>
+          <button class="filter-btn">Find Packages</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-featured">
+      <div class="section-inner">
+        <div class="section-title">FEATURED PACKAGES</div>
+        <h2>Most Popular Travel Experiences</h2>
+        <div class="packages-grid">
+          <div class="package-card">
+            <div class="package-badge">BEST SELLER</div>
+            <div class="package-img-wrap">
+              <img src="images/package1.jpg" alt="Santorini sunset tour" />
+            </div>
+            <div class="package-content">
+              <div class="package-meta">
+                <span class="package-duration"
+                  ><i class="duration-icon">⏱</i> 7 Days</span
+                >
+                <span class="package-type">Romantic</span>
+              </div>
+              <h3>Santorini Dream Escape</h3>
+              <p>
+                Experience the magic of Santorini with stunning sunsets,
+                white-washed villages, and crystal clear waters.
+              </p>
+              <div class="package-features">
+                <span class="package-feature">✓ Luxury Accommodations</span>
+                <span class="package-feature">✓ Private Tours</span>
+                <span class="package-feature">✓ Sunset Cruise</span>
+              </div>
+              <div class="package-pricing">
+                <div class="package-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">$1,499</span>
+                  <span class="price-per">per person</span>
+                </div>
+                <a href="#" class="btn-orange">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <div class="package-badge">20% OFF</div>
+            <div class="package-img-wrap">
+              <img src="images/package2.jpg" alt="Bali adventure tour" />
+            </div>
+            <div class="package-content">
+              <div class="package-meta">
+                <span class="package-duration"
+                  ><i class="duration-icon">⏱</i> 10 Days</span
+                >
+                <span class="package-type">Adventure</span>
+              </div>
+              <h3>Bali Adventure Explorer</h3>
+              <p>
+                From lush rice terraces to sacred temples and vibrant markets,
+                discover the cultural heart of Bali.
+              </p>
+              <div class="package-features">
+                <span class="package-feature">✓ Guided Hiking</span>
+                <span class="package-feature">✓ Cultural Experiences</span>
+                <span class="package-feature">✓ Beach Activities</span>
+              </div>
+              <div class="package-pricing">
+                <div class="package-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">$1,299</span>
+                  <span class="price-per">per person</span>
+                </div>
+                <a href="#" class="btn-orange">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <div class="package-badge">FAMILY</div>
+            <div class="package-img-wrap">
+              <img src="images/package3.jpg" alt="Swiss Alps family tour" />
+            </div>
+            <div class="package-content">
+              <div class="package-meta">
+                <span class="package-duration"
+                  ><i class="duration-icon">⏱</i> 8 Days</span
+                >
+                <span class="package-type">Family</span>
+              </div>
+              <h3>Swiss Alps Family Adventure</h3>
+              <p>
+                Create lasting memories with your family among the breathtaking
+                landscapes of the Swiss Alps.
+              </p>
+              <div class="package-features">
+                <span class="package-feature">✓ Child-Friendly Activities</span>
+                <span class="package-feature">✓ Mountain Excursions</span>
+                <span class="package-feature">✓ Chocolate Workshop</span>
+              </div>
+              <div class="package-pricing">
+                <div class="package-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">$1,899</span>
+                  <span class="price-per">per person</span>
+                </div>
+                <a href="#" class="btn-orange">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-categories">
+      <div class="section-inner">
+        <div class="section-title">PACKAGE TYPES</div>
+        <h2>Find Your Perfect Travel Style</h2>
+
+        <div class="package-types-grid">
+          <div class="package-type-card">
+            <div class="package-type-icon">💎</div>
+            <h3>Luxury Getaways</h3>
+            <p>
+              Premium accommodations, exclusive experiences, and VIP treatment
+              for the discerning traveler.
+            </p>
+            <a href="luxury-packages.html" class="package-type-link">Explore Luxury Packages</a>
+          </div>
+
+          <div class="package-type-card">
+            <div class="package-type-icon">🏔️</div>
+            <h3>Adventure Trips</h3>
+            <p>
+              Thrilling activities and off-the-beaten-path experiences for
+              adventure seekers.
+            </p>
+            <a href="#" class="package-type-link">Explore Adventure Packages</a>
+          </div>
+
+          <div class="package-type-card">
+            <div class="package-type-icon">👨‍👩‍👧‍👦</div>
+            <h3>Family Vacations</h3>
+            <p>
+              Family-friendly accommodations and activities designed for
+              travelers of all ages.
+            </p>
+            <a href="#" class="package-type-link">Explore Family Packages</a>
+          </div>
+
+          <div class="package-type-card">
+            <div class="package-type-icon">💖</div>
+            <h3>Honeymoon Specials</h3>
+            <p>
+              Romantic settings and intimate experiences for couples celebrating
+              their love.
+            </p>
+            <a href="#" class="package-type-link">Explore Honeymoon Packages</a>
+          </div>
+
+          <div class="package-type-card">
+            <div class="package-type-icon">🏛️</div>
+            <h3>Cultural Immersions</h3>
+            <p>
+              Deep dives into local traditions, history, and authentic cultural
+              experiences.
+            </p>
+            <a href="#" class="package-type-link">Explore Cultural Packages</a>
+          </div>
+
+          <div class="package-type-card">
+            <div class="package-type-icon">🌊</div>
+            <h3>Beach Escapes</h3>
+            <p>
+              Sun, sand, and sea at the world's most beautiful coastal
+              destinations.
+            </p>
+            <a href="#" class="package-type-link">Explore Beach Packages</a>
+          </div>
+
+          <div class="package-type-card">
+            <div class="package-type-icon">🧘</div>
+            <h3>Wellness Retreats</h3>
+            <p>
+              Rejuvenating experiences focused on health, relaxation, and 
+              personal well-being in serene settings.
+            </p>
+            <a href="#" class="package-type-link">Explore Wellness Packages</a>
+          </div>
+
+          <div class="package-type-card">
+            <div class="package-type-icon">🦁</div>
+            <h3>Wildlife Safaris</h3>
+            <p>
+              Unforgettable encounters with exotic wildlife in their natural
+              habitats across the world's most diverse ecosystems.
+            </p>
+            <a href="#" class="package-type-link">Explore Safari Packages</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seasonal-offers">
+      <div class="section-inner">
+        <div class="season-banner">
+          <div class="season-content">
+            <h3>Summer Specials</h3>
+            <p>
+              Take advantage of our limited-time summer offers with up to 30%
+              off select destinations.
+            </p>
+            <a href="#" class="btn-orange btn-with-icon">View Summer Deals <span class="btn-icon">→</span></a>
+          </div>
+          <div class="season-image">
+            <img
+              src="images/summer-special.jpg"
+              alt="Summer beach destination"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="custom-packages">
+      <div class="section-inner">
+        <div class="section-title">TAILOR-MADE JOURNEYS</div>
+        <h2>Create Your Custom Travel Package</h2>
+        <div class="custom-package-container">
+          <div class="custom-package-content">
+            <p>
+              Can't find exactly what you're looking for? Our travel experts can
+              help create a custom itinerary perfectly tailored to your
+              preferences, budget, and travel style.
+            </p>
+            <ul class="custom-benefits">
+              <li>✓ Personalized itineraries designed just for you</li>
+              <li>✓ Flexibility to choose your own activities and pace</li>
+              <li>✓ Expert recommendations for hidden gems</li>
+              <li>✓ 24/7 support during your journey</li>
+            </ul>
+            <a href="index.html#contact" class="btn-orange"
+              >Contact Our Travel Experts</a
+            >
+          </div>
+          <div class="custom-package-image">
+            <img
+              src="images/custom-travel.jpg"
+              alt="Travel consultant planning a custom trip"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-testimonials">
+      <div class="section-inner">
+        <div class="section-title">WHAT TRAVELERS SAY</div>
+        <h2>Hear From Our Happy Customers</h2>
+        <div class="packages-testimonial-grid">
+          <div class="package-testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "The Swiss Alps Family Adventure exceeded all our expectations!
+              Our kids loved the chocolate workshop, and the mountain views were
+              breathtaking."
+            </p>
+            <div class="testimonial-author">
+              <img src="images/user-sophia.jpg" alt="Sophia Martinez" />
+              <div>
+                <h4>Sophia Martinez</h4>
+                <p>Swiss Alps Family Adventure</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="package-testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Santorini Dream Escape was truly magical. The private sunset
+              cruise was the highlight of our honeymoon. Worth every penny!"
+            </p>
+            <div class="testimonial-author">
+              <img src="images/user-ava.jpg" alt="Ava Patel" />
+              <div>
+                <h4>Ava Patel</h4>
+                <p>Santorini Dream Escape</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="package-testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "The Bali Adventure Explorer package was the perfect mix of
+              adventure and relaxation. Hiking Mount Batur at sunrise was an
+              unforgettable experience."
+            </p>
+            <div class="testimonial-author">
+              <img src="images/user-noah.jpg" alt="Noah Smith" />
+              <div>
+                <h4>Noah Smith</h4>
+                <p>Bali Adventure Explorer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-faq">
+      <div class="section-inner">
+        <div class="section-title">COMMON QUESTIONS</div>
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>What's included in your tour packages?</h3>
+            <p>
+              Our packages typically include accommodation, transportation,
+              guided tours, and select meals as specified in each package
+              description. Some packages also include special activities and
+              entrance fees to attractions.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How do I book a package?</h3>
+            <p>
+              You can book a package directly through our website by clicking
+              the "View Details" button on any package, then following the
+              booking steps. Alternatively, you can contact our travel experts
+              for assistance.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I customize an existing package?</h3>
+            <p>
+              Yes! Most of our packages can be customized to suit your
+              preferences. Contact our travel experts to discuss your specific
+              requirements.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What is your cancellation policy?</h3>
+            <p>
+              Our standard policy allows for full refunds up to 30 days before
+              departure, 50% refund for cancellations 15-29 days before
+              departure, and no refunds for cancellations less than 15 days
+              before departure. We recommend travel insurance for all bookings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-cta">
+      <div class="section-inner">
+        <h2>Ready to Book Your Dream Vacation?</h2>
+        <p>
+          Browse our carefully curated packages or let us create a custom
+          itinerary just for you.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-orange">Explore All Packages</a>
+          <a href="index.html#contact" class="btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>About TravelAgency</h4>
+          <p>
+            We specialize in creating unforgettable travel experiences around
+            the world. Our expert team crafts journeys that combine adventure,
+            culture, and relaxation.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>1234 Travel Lane<br />Adventure City, AC 12345</p>
+          <p>Phone: (123) 456-7890<br />Email: info@travelagency.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+          </div>
+          <p>
+            Subscribe to our newsletter for travel tips and exclusive offers.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TravelAgency. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

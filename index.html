@@ -1,149 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Agency</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <meta
+      name="description"
+      content="Discover and book amazing travel experiences with TravelAgency. Explore destinations, packages, and more!"
+    />
+    <meta property="og:title" content="Travel Agency" />
+    <meta
+      property="og:description"
+      content="Discover and book amazing travel experiences with TravelAgency. Explore destinations, packages, and more!"
+    />
+    <meta
+      property="og:image"
+      content="https://source.unsplash.com/400x300/?travel"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://<YOUR_GITHUB_USERNAME>.github.io/travel/"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script defer src="main.js"></script>
+    <script defer src="transitions.js"></script>
+    <script defer src="mobile-menu.js"></script>
+  </head>
+  <body>
     <header>
+      <div class="navbar">
         <div class="logo">TravelAgency</div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#packages">Packages</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-        <button class="cta-book">Book Now</button>
+      </div>
     </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Discover Your Next Adventure</h1>
-            <p>Explore the world's most beautiful places with us.</p>
-            <button class="cta-explore">Explore Tours</button>
-        </div>
+    <div class="overlay"></div>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <img
+        src="images/hero.jpg"
+        alt="Beautiful coastal city at sunset"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 0;
+        "
+        loading="eager"
+      />
+      <div class="hero-content">
+        <h1>It is Better to Travel Well Than to Arrive</h1>
+        <button class="hero-btn">Watch Video</button>
+      </div>
     </section>
-
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Welcome to TravelAgency, your go-to travel experts. We have been making dreams come true for over 20 years. Our mission is to provide personalized and unforgettable travel experiences for every customer.</p>
-        <div class="about-images">
-            <img src="https://source.unsplash.com/400x300/?team" alt="Our Team">
-            <img src="https://source.unsplash.com/400x300/?office" alt="Our Office">
-            <img src="https://source.unsplash.com/400x300/?happy-customers" alt="Happy Customers">
+    <section id="about">
+      <div class="section-title">ABOUT US</div>
+      <div
+        style="display: flex; gap: 44px; align-items: center; flex-wrap: wrap"
+      >
+        <div style="flex: 1 1 320px; min-width: 240px">
+          <h2>Explore All Corners Of The World With Us</h2>
+          <p>
+            For far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <button class="btn-orange">Read more</button>
         </div>
-    </section>
-
-    <section id="destinations" class="destinations">
-        <h2>Featured Destinations</h2>
-        <div class="destination-grid">
-            <div class="destination-item">
-                <img src="https://source.unsplash.com/400x300/?paris" alt="Paris">
-                <h3>Paris</h3>
-                <p>The city of lights and love.</p>
-            </div>
-            <div class="destination-item">
-                <img src="https://source.unsplash.com/400x300/?new-york" alt="New York">
-                <h3>New York</h3>
-                <p>The city that never sleeps.</p>
-            </div>
-            <div class="destination-item">
-                <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo">
-                <h3>Tokyo</h3>
-                <p>A blend of tradition and modernity.</p>
-            </div>
-            <div class="destination-item">
-                <img src="https://source.unsplash.com/400x300/?sydney" alt="Sydney">
-                <h3>Sydney</h3>
-                <p>Home to the iconic Sydney Opera House.</p>
-            </div>
+        <div style="display: flex; gap: 18px">
+          <img
+            src="images/about1.jpg"
+            alt="Tropical beach with palm trees"
+            style="
+              width: 180px;
+              height: 180px;
+              object-fit: cover;
+              border-radius: 14px;
+            "
+          />
+          <img
+            src="images/about2.jpg"
+            alt="Seaplane flying over turquoise water"
+            style="
+              width: 180px;
+              height: 180px;
+              object-fit: cover;
+              border-radius: 14px;
+            "
+          />
         </div>
+      </div>
     </section>
-
-    <section id="packages" class="packages">
-        <h2>Special Packages</h2>
-        <div class="package-grid">
-            <div class="package-item">
-                <img src="https://source.unsplash.com/400x300/?beach-resort" alt="Beach Resort">
-                <h3>Beach Resort Getaway</h3>
-                <p>Experience the ultimate relaxation at our luxurious beach resorts.</p>
-                <button class="cta">Learn More</button>
-            </div>
-            <div class="package-item">
-                <img src="https://source.unsplash.com/400x300/?mountain-adventure" alt="Mountain Adventure">
-                <h3>Mountain Adventure</h3>
-                <p>Conquer the peaks with our thrilling mountain adventure packages.</p>
-                <button class="cta">Learn More</button>
-            </div>
-            <div class="package-item">
-                <img src="https://source.unsplash.com/400x300/?city-tour" alt="City Tour">
-                <h3>City Tours</h3>
-                <p>Explore the world's most exciting cities with our expert guides.</p>
-                <button class="cta">Learn More</button>
-            </div>
-            <div class="package-item">
-                <img src="https://source.unsplash.com/400x300/?cruise" alt="Cruise">
-                <h3>Luxury Cruises</h3>
-                <p>Sail away on a luxurious cruise experience.</p>
-                <button class="cta">Learn More</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2>Contact Us</h2>
-            <p>Have any questions or inquiries? Feel free to get in touch!</p>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo">
-                <div class="logo">TravelAgency</div>
-            </div>
-            <div class="footer-links">
-              <h4>Explore</h4>
-              <ul>
-                <li><a href="#">Destinations</a></li>
-                <li><a href="#">Activities</a></li>
-                <li><a href="#">Travel Tips</a></li>
-                <li><a href="#">About Us</a></li>
-              </ul>
-            </div>
-            <div class="footer-contact">
-              <h4>Contact Us</h4>
-              <p>123 Main Street, City</p>
-              <p>Email: info@travelsite.com</p>
-              <p>Phone: +1-555-555-5555</p>
-            </div>
-            <div class="footer-social">
-              <h4>Follow Us</h4>
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              </ul>
+    <section id="destinations" class="section-accent-bg">
+      <div class="section-title">WHAT WE SERVE</div>
+      <h2>We Provide Top Destinations</h2>
+      <div class="destination-masonry">
+        <div class="destination-card glass-card">
+          <div class="dest-image-wrap">
+            <img
+              src="images/dest1.jpg"
+              alt="Surfer riding a wave in Maldives"
+            />
+            <div class="dest-overlay">
+              <span class="dest-icon">🌴</span>
+              <span class="dest-name">Maldives</span>
+              <span class="price-badge">$490</span>
             </div>
           </div>
-          <div class="footer-bottom">
-            <p>&copy; 2024 Your Travel Website. All rights reserved.</p>
+        </div>
+        <div class="destination-card glass-card">
+          <div class="dest-image-wrap">
+            <img
+              src="images/dest2.jpg"
+              alt="Aerial view of Maldives island and seaplane"
+            />
+            <div class="dest-overlay">
+              <span class="dest-icon">✈️</span>
+              <span class="dest-name">Maldives</span>
+              <span class="price-badge">$430</span>
+            </div>
           </div>
         </div>
-      </footer>
-
-</body>
+        <div class="destination-card glass-card">
+          <div class="dest-image-wrap">
+            <img
+              src="images/dest3.jpg"
+              alt="Jet ski making a swirl in blue water"
+            />
+            <div class="dest-overlay">
+              <span class="dest-icon">🚤</span>
+              <span class="dest-name">Maldives</span>
+              <span class="price-badge">$560</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials testimonials-masonry-bg">
+      <div class="section-inner">
+        <div class="section-title">HAPPY CUSTOMER</div>
+        <h2>Testimonials</h2>
+        <div class="testimonials-masonry-grid">
+          <div class="testimonial-card tc-featured tc-orange">
+            <div class="testimonial-avatar-row">
+              <img src="images/user-ava.jpg" alt="Ava Patel" class="testimonial-avatar-masonry" />
+              <div>
+                <div class="testimonial-name">Ava Patel</div>
+                <div class="testimonial-role">Travel Enthusiast</div>
+              </div>
+            </div>
+            <div class="testimonial-quote-icon">&#8220;</div>
+            <div class="testimonial-text tc-featured-text">
+              Exploring new cultures and hidden gems is my passion, and this agency made every trip unforgettable!
+            </div>
+            <div class="testimonial-detail">
+              "From sunrise hikes in Bali to food tours in Italy, every detail was thoughtfully arranged. I always felt safe, inspired, and truly immersed in each destination. Already planning my next journey!"
+            </div>
+          </div>
+          <div class="testimonial-card tc-accent">
+            <div class="testimonial-avatar-row">
+              <img src="images/user-liam.jpg" alt="Liam Chen" class="testimonial-avatar-masonry" />
+              <div>
+                <div class="testimonial-name">Liam Chen</div>
+                <div class="testimonial-role">Solo Explorer</div>
+              </div>
+            </div>
+            <div class="testimonial-text">
+              The team made traveling solo feel safe and exciting!
+            </div>
+            <div class="testimonial-detail">
+              "I joined the Bali group tour and instantly made new friends. The excursions were well organized, and the support team was always available. Highly recommend for solo travelers!"
+            </div>
+          </div>
+          <div class="testimonial-card tc-light">
+            <div class="testimonial-avatar-row">
+              <img src="images/user-sophia.jpg" alt="Sophia Martinez" class="testimonial-avatar-masonry" />
+              <div>
+                <div class="testimonial-name">Sophia Martinez</div>
+                <div class="testimonial-role">Family Traveler</div>
+              </div>
+            </div>
+            <div class="testimonial-text">
+              A wonderful family experience with memories to last a lifetime.
+            </div>
+            <div class="testimonial-detail">
+              "Our family trip to Switzerland was seamless. The kids loved the mountain train rides and the chocolate-making workshop. Thank you for making our vacation stress-free!"
+            </div>
+          </div>
+          <div class="testimonial-card tc-featured tc-orange">
+            <div class="testimonial-avatar-row">
+              <img src="images/user-noah.jpg" alt="Noah Smith" class="testimonial-avatar-masonry" />
+              <div>
+                <div class="testimonial-name">Noah Smith</div>
+                <div class="testimonial-role">Adventure Seeker</div>
+              </div>
+            </div>
+            <div class="testimonial-quote-icon">&#8220;</div>
+            <div class="testimonial-text tc-featured-text">
+              Every adventure was better than the last. I discovered places I never imagined!
+            </div>
+            <div class="testimonial-detail">
+              "From hiking volcanoes in Iceland to snorkeling in the Maldives, every activity was well organized and thrilling. This agency truly knows how to create unforgettable journeys."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog-section blog-accent-bg" id="blog">
+      <div class="section-inner">
+        <div class="section-title">BLOG</div>
+        <h2>Recent Posts</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div class="blog-image-wrap">
+              <img
+                src="images/blog1.jpg"
+                alt="Businessman with suitcase jumping joyfully"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-title">
+                Essential Packing Tips for Long-Term Travel
+              </div>
+              <div class="blog-date">April 10, 2025</div>
+              <a class="blog-btn" href="blog.html">Read More &gt;</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-image-wrap">
+              <img
+                src="images/blog2.jpg"
+                alt="Street food market in Bangkok"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-title">
+                Street Food Adventures: Asia's Most Delicious Markets
+              </div>
+              <div class="blog-date">April 5, 2025</div>
+              <a class="blog-btn" href="blog.html">Read More &gt;</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-image-wrap">
+              <img
+                src="images/blog3.jpg"
+                alt="Person working on laptop at beach"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-title">
+                Digital Nomad Diaries: Working From Bali for a Month
+              </div>
+              <div class="blog-date">March 28, 2025</div>
+              <a class="blog-btn" href="blog.html">Read More &gt;</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-image-wrap">
+              <img
+                src="images/blog4.jpg"
+                alt="Hidden beach in Thailand"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-title">
+                Hidden Beaches of Thailand: Beyond the Tourist Trails
+              </div>
+              <div class="blog-date">March 22, 2025</div>
+              <a class="blog-btn" href="blog.html">Read More &gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-view-all">
+          <a href="blog.html" class="btn-outline">View All Blog Posts</a>
+        </div>
+      </div>
+    </section>
+    <section class="faq faq-accent-bg">
+      <div class="section-inner">
+        <div class="section-title">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How far in advance should I book my trip?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>For popular destinations and peak seasons, we recommend booking at least 3-6 months in advance. For less busy destinations or off-peak travel, 1-3 months is usually sufficient. Last-minute deals are sometimes available, but selection may be limited.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What payment methods do you accept?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>We accept all major credit cards (Visa, MasterCard, American Express), bank transfers, and PayPal. For certain destinations, we also offer payment plans with a deposit followed by scheduled payments.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do I need travel insurance?</h3>
+              <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-answer">
+              <p>While not mandatory, we strongly recommend travel insurance for all trips. It can protect you from unexpected events, medical emergencies, trip cancellations, and lost luggage. We can help you find the right insurance plan for your specific journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cta-banner">Begin your adventurous journey here.</div>
+    <footer>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>About TravelAgency</h4>
+          <p>
+            For far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="16" fill="#fff" />
+                <path
+                  d="M21.5 16h-3v9h-4v-9h-2v-3h2v-2c0-2.2 1.3-4 4-4h3v3h-2c-.6 0-1 .4-1 1v2h3l-.5 3z"
+                  fill="#1877F3"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="16" fill="#fff" />
+                <path
+                  d="M25.5 11.5a6.4 6.4 0 0 1-1.8.5 3.2 3.2 0 0 0 1.4-1.8 6.4 6.4 0 0 1-2 .8 3.2 3.2 0 0 0-5.5 2.9A9.1 9.1 0 0 1 9.5 10a3.2 3.2 0 0 0 1 4.3 3.2 3.2 0 0 1-1.5-.4v.1a3.2 3.2 0 0 0 2.6 3.1c-.3.1-.6.2-.9.2-.2 0-.4 0-.6-.1a3.2 3.2 0 0 0 3 2.2A6.5 6.5 0 0 1 8.5 23c-.4 0-.7 0-1-.1a9.1 9.1 0 0 0 4.9 1.4c5.8 0 9-4.8 9-9v-.4a6.4 6.4 0 0 0 1.6-1.6z"
+                  fill="#1DA1F2"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="16" fill="#fff" />
+                <radialGradient
+                  id="ig"
+                  cx="16"
+                  cy="16"
+                  r="16"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#feda75" />
+                  <stop offset="0.5" stop-color="#fa7e1e" />
+                  <stop offset="1" stop-color="#d62976" />
+                </radialGradient>
+                <rect
+                  x="10"
+                  y="10"
+                  width="12"
+                  height="12"
+                  rx="4"
+                  fill="url(#ig)"
+                />
+                <circle cx="16" cy="16" r="3" fill="#fff" />
+                <circle cx="21" cy="11" r="1" fill="#fff" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>43 Raymond Rd, Baltimore, London 3910</p>
+          <p>+1(123)-456-7890<br />info@yourdomain.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom" style="text-align: center">
+        Copyright &copy;2025 All rights reserved.
+      </div>
+    </footer>
+    
+    <script>
+      // FAQ Toggle Functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          
+          question.addEventListener('click', function() {
+            // Toggle active class on clicked item
+            item.classList.toggle('active');
+            
+            // Update the toggle symbol
+            const toggle = item.querySelector('.faq-toggle');
+            toggle.textContent = item.classList.contains('active') ? '−' : '+';
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

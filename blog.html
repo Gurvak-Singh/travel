@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog - Travel Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="transitions.js"></script>
+    <script defer src="mobile-menu.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">TravelAgency</div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <section class="blog-hero">
+      <div class="blog-hero-overlay"></div>
+      <img
+        src="images/blog-hero.jpg"
+        alt="Travel journals and camera"
+        class="blog-hero-img"
+      />
+      <div class="blog-hero-content">
+        <h1>Travel Blog</h1>
+        <p>Travel tips, destination guides, and stories from around the world</p>
+      </div>
+    </section>
+
+    <section class="blog-filters">
+      <div class="section-inner">
+        <div class="blog-filter-container">
+          <div class="blog-search">
+            <input type="text" placeholder="Search articles..." />
+            <button class="search-btn">Search</button>
+          </div>
+          <div class="blog-categories">
+            <span class="category-label">Categories:</span>
+            <div class="category-tags">
+              <a href="#" class="blog-category-tag active">All</a>
+              <a href="#" class="blog-category-tag">Tips & Advice</a>
+              <a href="#" class="blog-category-tag">Destinations</a>
+              <a href="#" class="blog-category-tag">Travel Stories</a>
+              <a href="#" class="blog-category-tag">Culture</a>
+              <a href="#" class="blog-category-tag">Food</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-featured">
+      <div class="section-inner">
+        <div class="blog-featured-post">
+          <div class="featured-post-img">
+            <img src="images/blog-featured.jpg" alt="Santorini sunset view" />
+          </div>
+          <div class="featured-post-content">
+            <div class="post-meta">
+              <span class="post-category">Destinations</span>
+              <span class="post-date">April 15, 2025</span>
+            </div>
+            <h2>10 Breathtaking Views You Must Experience in Santorini</h2>
+            <p>From the iconic blue-domed churches of Oia to the volcanic beaches of Perissa, Santorini offers some of the most stunning vistas in the Mediterranean. In this guide, we explore the island's most photogenic spots and share the best times to visit each one for that perfect sunset photo.</p>
+            <div class="post-footer">
+              <a href="#" class="btn-outline">Read More</a>
+              <div class="post-stats">
+                <span class="post-stat"><i class="stat-icon">👁️</i> 2.4K views</span>
+                <span class="post-stat"><i class="stat-icon">💬</i> 48 comments</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-main">
+      <div class="section-inner">
+        <div class="blog-grid">
+          <div class="blog-post-card">
+            <div class="post-img">
+              <img src="images/blog1.jpg" alt="Person with backpack looking at mountain view" />
+              <div class="post-category-badge">Tips & Advice</div>
+            </div>
+            <div class="post-content">
+              <h3>Essential Packing Tips for Long-Term Travel</h3>
+              <p>Planning a gap year or extended trip? Learn how to pack efficiently while ensuring you have everything you need for months on the road.</p>
+              <div class="post-meta-footer">
+                <span class="post-date">April 10, 2025</span>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="blog-post-card">
+            <div class="post-img">
+              <img src="images/blog2.jpg" alt="Street food market in Bangkok" />
+              <div class="post-category-badge">Food</div>
+            </div>
+            <div class="post-content">
+              <h3>Street Food Adventures: Asia's Most Delicious Markets</h3>
+              <p>From Bangkok's bustling night markets to the street vendors of Taipei, discover where to find the most authentic and delicious street food in Asia.</p>
+              <div class="post-meta-footer">
+                <span class="post-date">April 5, 2025</span>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="blog-post-card">
+            <div class="post-img">
+              <img src="images/blog3.jpg" alt="Person working on laptop at beach" />
+              <div class="post-category-badge">Travel Stories</div>
+            </div>
+            <div class="post-content">
+              <h3>Digital Nomad Diaries: Working From Bali for a Month</h3>
+              <p>What's it really like to be a digital nomad in paradise? One traveler shares their experience, challenges, and tips for remote work in Bali.</p>
+              <div class="post-meta-footer">
+                <span class="post-date">March 28, 2025</span>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="blog-post-card">
+            <div class="post-img">
+              <img src="images/blog4.jpg" alt="Hidden beach in Thailand" />
+              <div class="post-category-badge">Destinations</div>
+            </div>
+            <div class="post-content">
+              <h3>Hidden Beaches of Thailand: Beyond the Tourist Trails</h3>
+              <p>Escape the crowds and discover these secluded beaches that offer pristine sands, crystal waters, and the authentic Thai experience.</p>
+              <div class="post-meta-footer">
+                <span class="post-date">March 22, 2025</span>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="blog-post-card">
+            <div class="post-img">
+              <img src="images/blog5.jpg" alt="Traditional dance performance in Bali" />
+              <div class="post-category-badge">Culture</div>
+            </div>
+            <div class="post-content">
+              <h3>Cultural Immersion: Traditional Ceremonies Worth Traveling For</h3>
+              <p>From Balinese fire dances to Japanese tea ceremonies, these cultural experiences offer a deeper connection to the places you visit.</p>
+              <div class="post-meta-footer">
+                <span class="post-date">March 15, 2025</span>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="blog-post-card">
+            <div class="post-img">
+              <img src="images/blog6.jpg" alt="Family hiking in Swiss Alps" />
+              <div class="post-category-badge">Tips & Advice</div>
+            </div>
+            <div class="post-content">
+              <h3>Family Travel: Making Memories Without Breaking the Bank</h3>
+              <p>Smart strategies for planning memorable family vacations while staying within budget, from accommodation hacks to free activities.</p>
+              <div class="post-meta-footer">
+                <span class="post-date">March 10, 2025</span>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="blog-pagination">
+          <a href="#" class="pagination-arrow disabled">←</a>
+          <a href="#" class="pagination-number active">1</a>
+          <a href="#" class="pagination-number">2</a>
+          <a href="#" class="pagination-number">3</a>
+          <span class="pagination-dots">...</span>
+          <a href="#" class="pagination-number">8</a>
+          <a href="#" class="pagination-arrow">→</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-subscribe">
+      <div class="section-inner">
+        <div class="subscribe-container">
+          <div class="subscribe-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest travel tips, destination guides, and exclusive offers delivered straight to your inbox.</p>
+            <form class="subscribe-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn-orange">Subscribe</button>
+            </form>
+            <div class="subscribe-note">We respect your privacy. Unsubscribe at any time.</div>
+          </div>
+          <div class="subscribe-image">
+            <img src="images/newsletter.jpg" alt="Travel inspiration in an inbox" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram-feed">
+      <div class="section-inner">
+        <div class="section-title">INSTAGRAM</div>
+        <h2>Follow Our Adventures</h2>
+        <p class="instagram-intro">Follow us <a href="#" class="instagram-link">@travelagency</a> for daily inspiration</p>
+        
+        <div class="instagram-grid">
+          <a href="#" class="instagram-item">
+            <img src="images/insta1.jpg" alt="Beach sunset" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 542</span>
+                <span><i class="insta-icon">💬</i> 24</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="images/insta2.jpg" alt="Mountain landscape" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 328</span>
+                <span><i class="insta-icon">💬</i> 18</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="images/insta3.jpg" alt="Local food" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 417</span>
+                <span><i class="insta-icon">💬</i> 31</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="images/insta4.jpg" alt="Historical temple" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 602</span>
+                <span><i class="insta-icon">💬</i> 45</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="images/insta5.jpg" alt="Safari wildlife" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 712</span>
+                <span><i class="insta-icon">💬</i> 58</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="images/insta6.jpg" alt="City skyline" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 486</span>
+                <span><i class="insta-icon">💬</i> 27</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="images/insta7.jpg" alt="Ocean diving" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 578</span>
+                <span><i class="insta-icon">💬</i> 36</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="images/insta8.jpg" alt="Traditional market" />
+            <div class="instagram-overlay">
+              <div class="instagram-stats">
+                <span><i class="insta-icon">❤️</i> 394</span>
+                <span><i class="insta-icon">💬</i> 22</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>About TravelAgency</h4>
+          <p>
+            We specialize in creating unforgettable travel experiences around the
+            world. Our expert team crafts journeys that combine adventure,
+            culture, and relaxation.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>1234 Travel Lane<br />Adventure City, AC 12345</p>
+          <p>Phone: (123) 456-7890<br />Email: info@travelagency.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+          </div>
+          <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TravelAgency. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
