@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Agency</title>
+    <title>TravelAgency - Discover Unforgettable Travel Experiences</title>
     <meta
       name="description"
-      content="Discover and book amazing travel experiences with TravelAgency. Explore destinations, packages, and more!"
+      content="Discover and book amazing travel experiences with TravelAgency. Explore destinations, luxury packages, and expert travel planning services for your dream vacation."
     />
-    <meta property="og:title" content="Travel Agency" />
+    <meta name="keywords" content="travel agency, vacation packages, luxury travel, adventure tours, holiday destinations, travel planning" />
+    <meta property="og:title" content="TravelAgency - Discover Unforgettable Travel Experiences" />
     <meta
       property="og:description"
-      content="Discover and book amazing travel experiences with TravelAgency. Explore destinations, packages, and more!"
+      content="Discover and book amazing travel experiences with TravelAgency. Explore destinations, luxury packages, and expert travel planning services."
     />
     <meta
       property="og:image"
@@ -27,6 +28,7 @@
     <script defer src="main.js"></script>
     <script defer src="transitions.js"></script>
     <script defer src="mobile-menu.js"></script>
+    <script defer src="backtotop.js"></script>
   </head>
   <body>
     <header>
@@ -94,6 +96,7 @@
               object-fit: cover;
               border-radius: 14px;
             "
+            loading="lazy"
           />
           <img
             src="images/about2.jpg"
@@ -104,6 +107,7 @@
               object-fit: cover;
               border-radius: 14px;
             "
+            loading="lazy"
           />
         </div>
       </div>
@@ -117,6 +121,7 @@
             <img
               src="images/dest1.jpg"
               alt="Surfer riding a wave in Maldives"
+              loading="lazy"
             />
             <div class="dest-overlay">
               <span class="dest-icon">🌴</span>
@@ -130,6 +135,7 @@
             <img
               src="images/dest2.jpg"
               alt="Aerial view of Maldives island and seaplane"
+              loading="lazy"
             />
             <div class="dest-overlay">
               <span class="dest-icon">✈️</span>
@@ -143,6 +149,7 @@
             <img
               src="images/dest3.jpg"
               alt="Jet ski making a swirl in blue water"
+              loading="lazy"
             />
             <div class="dest-overlay">
               <span class="dest-icon">🚤</span>
@@ -160,7 +167,7 @@
         <div class="testimonials-masonry-grid">
           <div class="testimonial-card tc-featured tc-orange">
             <div class="testimonial-avatar-row">
-              <img src="images/user-ava.jpg" alt="Ava Patel" class="testimonial-avatar-masonry" />
+              <img src="images/user-ava.jpg" alt="Ava Patel" class="testimonial-avatar-masonry" loading="lazy" />
               <div>
                 <div class="testimonial-name">Ava Patel</div>
                 <div class="testimonial-role">Travel Enthusiast</div>
@@ -176,7 +183,7 @@
           </div>
           <div class="testimonial-card tc-accent">
             <div class="testimonial-avatar-row">
-              <img src="images/user-liam.jpg" alt="Liam Chen" class="testimonial-avatar-masonry" />
+              <img src="images/user-liam.jpg" alt="Liam Chen" class="testimonial-avatar-masonry" loading="lazy" />
               <div>
                 <div class="testimonial-name">Liam Chen</div>
                 <div class="testimonial-role">Solo Explorer</div>
@@ -191,7 +198,7 @@
           </div>
           <div class="testimonial-card tc-light">
             <div class="testimonial-avatar-row">
-              <img src="images/user-sophia.jpg" alt="Sophia Martinez" class="testimonial-avatar-masonry" />
+              <img src="images/user-sophia.jpg" alt="Sophia Martinez" class="testimonial-avatar-masonry" loading="lazy" />
               <div>
                 <div class="testimonial-name">Sophia Martinez</div>
                 <div class="testimonial-role">Family Traveler</div>
@@ -206,7 +213,7 @@
           </div>
           <div class="testimonial-card tc-featured tc-orange">
             <div class="testimonial-avatar-row">
-              <img src="images/user-noah.jpg" alt="Noah Smith" class="testimonial-avatar-masonry" />
+              <img src="images/user-noah.jpg" alt="Noah Smith" class="testimonial-avatar-masonry" loading="lazy" />
               <div>
                 <div class="testimonial-name">Noah Smith</div>
                 <div class="testimonial-role">Adventure Seeker</div>
@@ -233,6 +240,7 @@
               <img
                 src="images/blog1.jpg"
                 alt="Businessman with suitcase jumping joyfully"
+                loading="lazy"
               />
             </div>
             <div class="blog-content">
@@ -248,6 +256,7 @@
               <img
                 src="images/blog2.jpg"
                 alt="Street food market in Bangkok"
+                loading="lazy"
               />
             </div>
             <div class="blog-content">
@@ -263,6 +272,7 @@
               <img
                 src="images/blog3.jpg"
                 alt="Person working on laptop at beach"
+                loading="lazy"
               />
             </div>
             <div class="blog-content">
@@ -278,6 +288,7 @@
               <img
                 src="images/blog4.jpg"
                 alt="Hidden beach in Thailand"
+                loading="lazy"
               />
             </div>
             <div class="blog-content">
@@ -285,6 +296,38 @@
                 Hidden Beaches of Thailand: Beyond the Tourist Trails
               </div>
               <div class="blog-date">March 22, 2025</div>
+              <a class="blog-btn" href="blog.html">Read More &gt;</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-image-wrap">
+              <img
+                src="images/blog5.jpg"
+                alt="Traditional ceremony in Bali"
+                loading="lazy"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-title">
+                Traditional Ceremonies in Bali: A Cultural Immersion
+              </div>
+              <div class="blog-date">March 18, 2025</div>
+              <a class="blog-btn" href="blog.html">Read More &gt;</a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-image-wrap">
+              <img
+                src="images/blog6.jpg"
+                alt="Family hiking in mountains"
+                loading="lazy"
+              />
+            </div>
+            <div class="blog-content">
+              <div class="blog-title">
+                Family Hiking in the Mountains: Creating Lasting Memories
+              </div>
+              <div class="blog-date">March 15, 2025</div>
               <a class="blog-btn" href="blog.html">Read More &gt;</a>
             </div>
           </div>

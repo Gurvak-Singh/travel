@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found - TravelAgency</title>
+    <meta
+      name="description"
+      content="The page you are looking for could not be found. Return to the TravelAgency homepage."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script defer src="transitions.js"></script>
+    <script defer src="mobile-menu.js"></script>
+    <script defer src="backtotop.js"></script>
+    <style>
+      .error-container {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 20px;
+      }
+      
+      .error-code {
+        font-size: 120px;
+        font-weight: 700;
+        color: #ff8500;
+        margin: 0;
+        line-height: 1;
+        font-family: "Playfair Display", serif;
+      }
+      
+      .error-title {
+        font-size: 32px;
+        margin: 20px 0;
+        font-family: "Playfair Display", serif;
+      }
+      
+      .error-message {
+        max-width: 600px;
+        margin: 0 auto 30px;
+        color: #666;
+        line-height: 1.6;
+      }
+      
+      .error-image {
+        width: 240px;
+        height: 240px;
+        margin-bottom: 30px;
+        object-fit: contain;
+      }
+      
+      .btn-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">TravelAgency</div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    
+    <main class="error-container">
+      <img src="images/404.jpg" alt="Lost traveler looking at map" class="error-image">
+      <h1 class="error-code">404</h1>
+      <h2 class="error-title">Page Not Found</h2>
+      <p class="error-message">
+        Oops! It seems you've ventured off the beaten path. The page you're looking for has moved or doesn't exist anymore.
+      </p>
+      <div class="btn-container">
+        <a href="index.html" class="btn-orange">Back to Homepage</a>
+        <a href="destinations.html" class="btn-outline">Explore Destinations</a>
+        <a href="contact.html" class="btn-outline">Contact Us</a>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>About TravelAgency</h4>
+          <p>
+            We create unforgettable travel experiences, offering personalized
+            vacations to dream destinations around the world.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="destinations.html">Europe</a></li>
+            <li><a href="destinations.html">Asia</a></li>
+            <li><a href="destinations.html">Africa</a></li>
+            <li><a href="destinations.html">North America</a></li>
+            <li><a href="destinations.html">South America</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="blog.html">Travel Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 1234 Travel Lane, Adventure City</li>
+            <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+            <li><i class="fas fa-envelope"></i> info@travelagency.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TravelAgency. All rights reserved.</p>
+      </div>
+    </footer>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
